@@ -1,0 +1,381 @@
+body {
+    background-color: #f0f2f5;
+}
+
+*, :after, :before {
+    box-sizing: border-box
+}
+
+.clearfix:after, .clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+    display: block
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.login-wrap {
+    width: 100%;
+    margin: auto;
+    max-width: 525px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-height: 680px;
+    position: relative;
+}
+
+.login-html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.login-html .sign-in-htm, .login-html .sign-up-htm {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
+
+.login-html .sign-in, .login-html .sign-up, .login-form .group .check {
+    display: none;
+}
+
+.login-html .tab, .login-form .group .label, .login-form .group .button
+{
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-html .tab {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+
+.login-html .sign-in:checked+.tab, .login-html .sign-up:checked+.tab {
+    color: #fff;
+    border-color: #fff;
+}
+
+.login-form {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.login-form .group {
+    margin-bottom: 15px;
+}
+
+.login-form .group .label, .login-form .group .input, .login-form .group .button
+{
+    width: 100%;
+    color: #212529 !important;
+    display: block;
+    outline: none;
+}
+
+input {
+    color: #212529 !important;
+}
+
+
+.login-form .group .input, .login-form .group .button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgb(245 245 245);
+}
+
+.login-form .group input[data-type="password"] {
+    text-security: circle;
+    -webkit-text-security: circle;
+}
+
+.login-form .group .label {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.login-form .group .button {
+    background: #1161ee;
+}
+
+.login-form .group label .icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255, .1);
+}
+
+.login-form .group label .icon:before, .login-form .group label .icon:after
+{
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transition: all .2s ease-in-out 0s;
+}
+
+.login-form .group label .icon:before {
+    left: 3px;
+    width: 5px;
+    bottom: 6px;
+    transform: scale(0) rotate(0);
+}
+
+.login-form .group label .icon:after {
+    top: 6px;
+    right: 0;
+    transform: scale(0) rotate(0);
+}
+
+.login-form .group .check:checked+label {
+    color: #212529;
+}
+
+.login-form .group .check:checked+label .icon {
+    background: #1877f2;
+}
+
+.login-form .group .check:checked+label .icon:before {
+    transform: scale(1) rotate(45deg);
+}
+
+.login-form .group .check:checked+label .icon:after {
+    transform: scale(1) rotate(-45deg);
+}
+
+.login-html .sign-in:checked+.tab+.sign-up+.tab+.login-form .sign-in-htm
+{
+    transform: rotate(0);
+}
+
+.login-html .sign-up:checked+.tab+.login-form .sign-up-htm {
+    transform: rotate(0);
+}
+
+.hr {
+    height: 2px;
+    margin: 60px 0 50px 0;
+    background: rgba(255, 255, 255, .2);
+}
+
+.foot-lnk {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body  {
+    background-color: #f0f2f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.welcome {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.post-update {
+    margin-top: 5% !important;
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+}
+
+
+
+.signup {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.signupsuccess {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.javabook{
+    color: #3096f5 !important;
+}
+
+
+.logo {
+    color: #1877f2;
+    font-weight: bold;
+    margin-top: 8%;
+}
+
+.JavaFacebook {
+    font-size: 27px;
+    line-height: 28px;
+    width: auto;
+    font-weight: 400;
+}
+
+.divider {
+    border-bottom: 1px solid #dadde1;
+}
+
+
+.btn-primary:hover {
+    background-color: #1b64c1;
+}
+
+.btn-green {
+    background-color: #55b72d;
+    color: #fff;
+}
+
+
+.btn-green:hover {
+    color: #fff;
+    background-color: #46a221;
+}
+
+.profile-pic-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.profile-pic-icon-two {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.profile-pic-icon-three {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.profile-info {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+
+.create-post-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #e4e6eb;
+}
+
+.like {
+    width: 20px;
+    height: 20px;
+}
+
+.delete {
+    width: 20px;
+    height: 20px;
+}
+
+.like-post {
+    margin-left: 10px;
+}
+
+.comment {
+    margin-left: 10px;
+}
+
+.logout {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #e4e6eb;
+}
+
+
+
+.post-image {
+    width: 100%;
+}
+.drag{
+    resize: none;
+}
+
+.custom-file-input
+{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+label {
+    display: block !important;
+}
+
+.postName {
+    margin-top: -12px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #f0f2f5;
+    background-clip: padding-box;
+    border: 1px solid #f0f2f5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.post-date {
+    font-size: 14px;
+    font-weight: bold;
+}
